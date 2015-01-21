@@ -15,9 +15,9 @@
 
 
 //------>
-@property (weak, nonatomic) IBOutlet RGView *view1;
-@property (weak, nonatomic) IBOutlet RGView *view2;
-@property (weak, nonatomic) IBOutlet RGView *view3;
+//@property (weak, nonatomic) IBOutlet RGView *view1;
+//@property (weak, nonatomic) IBOutlet RGView *view2;
+//@property (weak, nonatomic) IBOutlet RGView *view3;
 
 
 //--CHeck
@@ -45,10 +45,25 @@
     RGView *visualEffectSubView2 = [[RGView alloc]initWithFrame:CGRectMake(160,10, 100, 200)];
     [self addHoldGestureRecognizer:visualEffectSubView1];
     [self addHoldGestureRecognizer:visualEffectSubView2];
-    [self addHoldGestureRecognizer:self.view1];
-    [self addHoldGestureRecognizer:self.view2];
-    [self addHoldGestureRecognizer:self.view3];
     
+    
+    
+    RGView *subView1OfMainView = [[RGView alloc]initWithFrame:CGRectMake(0, 0, 150, 150)];
+    subView1OfMainView.backgroundColor  = [UIColor colorWithRed:0.52 green:0.42 blue:0.57 alpha:1];
+    RGView *subView2OfMainView = [[RGView alloc]initWithFrame:CGRectMake(0, 200, 150, 150)];
+    subView2OfMainView.backgroundColor = [UIColor colorWithRed:0.08 green:0.09 blue:0.11 alpha:1];
+    RGView *subView3OfMainView = [[RGView alloc]initWithFrame:CGRectMake(0, 400, 150, 150)];
+    subView3OfMainView.backgroundColor = [UIColor blackColor];
+    
+    [self.view addSubview:subView1OfMainView];
+    [self.view addSubview:subView2OfMainView];
+    [self.view addSubview:subView3OfMainView];
+    
+    
+    [self addHoldGestureRecognizer:subView1OfMainView];
+    [self addHoldGestureRecognizer:subView2OfMainView];
+    [self addHoldGestureRecognizer:subView3OfMainView];
+
     
     
     visualEffectSubView1.backgroundColor = [UIColor colorWithRed:0.27 green:0.53 blue:0.98 alpha:1];

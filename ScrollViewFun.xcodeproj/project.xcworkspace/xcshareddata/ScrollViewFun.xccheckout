@@ -12,20 +12,24 @@
 	<dict>
 		<key>1D74991F86046C182332AA63C164B168732BD769</key>
 		<string>https://github.com/terminatorover/CircularSlider.git</string>
+		<key>E0104D91B4FB48C133285ED78A5641934A2750B9</key>
+		<string>https://github.com/terminatorover/MikeCheck.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ScrollViewFun/ScrollViewFun.xcodeproj</string>
+	<string>ScrollViewFun.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>1D74991F86046C182332AA63C164B168732BD769</key>
 		<string>../../..</string>
+		<key>E0104D91B4FB48C133285ED78A5641934A2750B9</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/terminatorover/CircularSlider.git</string>
+	<string>https://github.com/terminatorover/MikeCheck.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>1D74991F86046C182332AA63C164B168732BD769</string>
+	<string>E0104D91B4FB48C133285ED78A5641934A2750B9</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -34,7 +38,15 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>1D74991F86046C182332AA63C164B168732BD769</string>
 			<key>IDESourceControlWCCName</key>
-			<string>check</string>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E0104D91B4FB48C133285ED78A5641934A2750B9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ScrollViewFun</string>
 		</dict>
 	</array>
 </dict>
