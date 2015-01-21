@@ -59,6 +59,10 @@
     [self.view addSubview:subView2OfMainView];
     [self.view addSubview:subView3OfMainView];
     
+    [self.view sendSubviewToBack:subView1OfMainView];
+    [self.view sendSubviewToBack:subView2OfMainView];
+    [self.view sendSubviewToBack:subView3OfMainView];
+    
     
     [self addHoldGestureRecognizer:subView1OfMainView];
     [self addHoldGestureRecognizer:subView2OfMainView];
@@ -152,26 +156,7 @@
 - (void)finishedMovingWithGestureRecognizer:(UILongPressGestureRecognizer *)sender
 {
     
-    //move to either the blur view or the main view of the view controller (after checking where the user currently
-    //has the view
-//    CGPoint center = sender.view.center;
-//    CGRect rect = sender.view.frame;
-//    CGPoint centerPointInBlurView =
-//    [visualEffectView convertPoint:sender.view.center fromView:window];
-//    CGPoint centerPointInMainView = [self.view convertPoint:sender.view.center fromView:window];
-//    
-//    if(CGRectContainsPoint([visualEffectView bounds], centerPointInBlurView))
-//    {
-//        [visualEffectView.contentView addSubview:sender.view];
-//        sender.view.center = centerPointInBlurView;
-//    }
-//    else
-//    {
-//        [self.view addSubview:sender.view];
-//        sender.view.center = centerPointInMainView;
-//        NSLog(@"FRAME:===>%@",NSStringFromCGRect(sender.view.frame));
-//    }
-//    
+ 
     /**
      *  Another Way
      */
@@ -184,20 +169,13 @@
     else
     {
         [self.view   addSubview:sender.view];
+        [self.view sendSubviewToBack:sender.view];
     }
     
 
     sender.view.center =  [window convertPoint:sender.view.center toView:sender.view.superview];
     CGPoint point = sender.view.center;
-    CGRect checkRect = sender.view.frame;
-    for (UIView *subView in self.view.subviews)
-    {
-        if([subView isKindOfClass:[RGView class]])
-        {
-            NSLog(@"Frames:[[]]]]-====>> %@",NSStringFromCGRect(subView.frame));
-        }
-        
-    }
+    
     [UIView animateWithDuration:.2
                      animations:^{
                          sender.view.transform = CGAffineTransformIdentity;
@@ -209,17 +187,6 @@
 
     }];
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        NSLog(@"==============================================================");
-        for (UIView *subView in self.view.subviews)
-        {
-            if([subView isKindOfClass:[RGView class]])
-            {
-                NSLog(@"Frames:[[]]]]-====>> %@",NSStringFromCGRect(subView.frame));
-            }
-            
-        }
-    });
 
 }
 

@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScrollViewFun/ViewController.m"
-            timestampString = "443509057.709439"
+            timestampString = "443510027.502987"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "239"
-            endingLineNumber = "239"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
             landmarkName = "-checkSetup"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScrollViewFun/ViewController.m"
-            timestampString = "443509057.709439"
+            timestampString = "443510027.502987"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "179"
-            endingLineNumber = "179"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
             landmarkName = "-finishedMovingWithGestureRecognizer:"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScrollViewFun/ViewController.m"
-            timestampString = "443509057.709439"
+            timestampString = "443510027.502987"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "201"
-            endingLineNumber = "201"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
             landmarkName = "-finishedMovingWithGestureRecognizer:"
             landmarkType = "5">
          </BreakpointContent>
